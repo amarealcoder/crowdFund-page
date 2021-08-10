@@ -1,0 +1,78 @@
+@use '../_custom' as *;
+
+.main-div {
+  .bg-image {
+    background-repeat: no-repeat;
+    // height: 95vh;
+    //   padding: 30px 0;
+
+    .intro-content {
+      background-color: $white;
+      height: 300px;
+      margin-top: 20rem;
+      width: 50%;
+      .mastercraft {
+        margin-top: -1.5rem;
+      }
+      .container {
+        padding: 0 3rem;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      .intro-content {
+        width: 80%;
+        height: 350px;
+        margin-top: 15rem;
+        h6 {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .progress-section {
+    background-color: $white;
+    min-height: 180px;
+    width: 50%;
+
+    .border-l {
+      border-left: 1px solid $gray-500;
+      padding-left: 1.5rem;
+    }
+    .row {
+      padding-left: 1.75rem;
+    }
+  }
+  .progress {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .progress-section {
+      width: 80%;
+      // margin-top: -20rem;
+      .col-text {
+        text-align: center;
+      }
+
+      .border-l {
+        border-left: 0;
+      }
+      .row {
+        padding-left: 0;
+      }
+      hr {
+        width: 40%;
+        margin: 0 auto;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    hr {
+      display: none;
+    }
+  }
+}

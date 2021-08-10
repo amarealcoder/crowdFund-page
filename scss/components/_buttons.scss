@@ -1,0 +1,73 @@
+@use '../_custom' as *;
+@use '../components/_mixins' as *;
+
+.showcase-btns {
+  .btn1-rounded {
+    border: none;
+    background-color: $primary;
+    color: $white;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    &:hover {
+      // @include grey-hover;
+      color: rgba($white, 1);
+      background-color: rgba($dark-cyan, 10);
+      font-weight: 700;
+    }
+  }
+  .img-inline {
+    display: none;
+  }
+  .btn2-rounded {
+    position: relative;
+    padding: 0.75rem 1rem 0rem 3.5rem;
+    font-weight: 500;
+    border: none;
+    color: $dark-gray;
+    font-size: 14px;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    &:hover {
+      color: rgba($dark-cyan, 20);
+      font-weight: 700;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .btn2-rounded {
+      display: none;
+    }
+    .img-inline {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.about-section {
+  .btn3-rounded {
+    border: none;
+    background-color: $primary;
+    color: $white;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    &:hover {
+      // @include grey-hover;
+      color: rgba($white, 1);
+      background-color: rgba($dark-cyan, 10);
+      font-weight: 700;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .btn3-rounded {
+      padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use '../_custom' as *;
+
+.main-div {
+  .modal-section {
+    margin-top: 2rem;
+    .reward-area {
+      border: 1px solid $gray-400;
+      .custom-p {
+        font-weight: 700;
+        &:hover {
+          color: rgba($primary, 3);
+        }
+      }
+
+      .modal-div {
+        display: none;
+        border-top: 1px solid $gray-400;
+
+        .modal-input {
+          width: 6rem;
+          height: 2.5rem;
+          outline: none;
+          border: 1px solid $primary;
+        }
+        .modal-btn {
+          padding: 0.75rem 1.5rem;
+          background-color: $primary;
+          color: $white;
+          border: none;
+          outline: none;
+          &:hover {
+            background-color: rgba($dark-cyan, 10);
+          }
+        }
+      }
+    }
+    .success-btn {
+      padding: 1rem 2rem;
+      color: $white;
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      .modal-section > .custom {
+        width: 90%;
+        margin: 50px 20px;
+
+        .modal-div {
+          display: block;
+          .modal-pledge {
+            .modal-input {
+              width: 6rem;
+              height: 3rem;
+            }
+            .modal-btn {
+              // margin-top: 1rem;
+              padding: 0.755rem 2rem;
+            }
+          }
+        }
+        input[type='radio'] {
+          width: 1.5rem;
+          height: 1.75rem;
+        }
+        .custom-p {
+          font-size: 16px;
+          & > span {
+            display: block;
+          }
+        }
+      }
+
+      .success-div {
+        width: 80%;
+        margin: 5rem auto;
+      }
+
+      .modal-section > .custom::-webkit-scrollbar {
+        display: none;
+      }
+      .custom-p {
+        font-size: 14px;
+      }
+    }
+  }
+}

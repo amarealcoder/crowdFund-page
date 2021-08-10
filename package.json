@@ -1,0 +1,26 @@
+{
+  "name": "new-crowdfund",
+  "version": "1.0.0",
+  "description": "Crowd funding app with html5, css, sass, javascript and bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "boostrap",
+    "bootstrap-v5",
+    "crowdfunding-app",
+    "sass-website"
+  ],
+  "author": "Miracle",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.36.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.0.2",
+    "postcss-cli": "^8.3.1"
+  }
+}

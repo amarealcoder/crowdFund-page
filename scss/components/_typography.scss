@@ -1,0 +1,16 @@
+@use '../_custom' as *;
+html,
+// body {
+//   min-height: 100%;
+// }
+body {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 16px;
+  background-color: $gray-200;
+  width: auto;
+}
+.btn1-rounded,
+.btn2-rounded,
+.card-p {
+  font-size: 14px;
+}

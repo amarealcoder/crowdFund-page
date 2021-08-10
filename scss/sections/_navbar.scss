@@ -1,0 +1,33 @@
+@use '../_custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+  @include media-breakpoint-down(lg) {
+    ul {
+      background-color: $white;
+      border-radius: 12px;
+      margin-left: 1.5rem;
+      width: 90%;
+      padding: 1rem;
+      a {
+        color: $moderate-black !important;
+        font-weight: 500;
+      }
+      hr {
+        height: 2px;
+      }
+    }
+  }
+
+  li {
+    padding: 0 0.75rem;
+  }
+  a {
+    color: $white !important;
+    font-weight: 400;
+  }
+
+  &:hover {
+    color: rgba($dark-gray, 10);
+  }
+}

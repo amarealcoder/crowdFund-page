@@ -1,0 +1,24 @@
+@use '../_custom' as *;
+
+.main-div {
+  //   position: relative;
+  .about-section {
+    width: 50%;
+    background-color: $white;
+  }
+  .boder {
+    border-radius: 10px;
+  }
+  small {
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .about-section {
+      width: 80%;
+    }
+    // .fund-items {
+    //   flex: none;
+    // }
+  }
+}

@@ -1,0 +1,14 @@
+@use "_custom";
+
+//import the components
+@use "components/buttons";
+@use "components/mixins";
+@use "components/progress-bar";
+@use "components/typography";
+
+//import the sections
+@use "sections/navbar";
+@use "sections/intro-section";
+@use "sections/about-section";
+@use "sections/progress-section";
+@use "sections/modal-section";
